@@ -1,0 +1,16 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="datetime.date" />
+          <option value="gpt.ScheduledRide" />
+          <option value="ProcessPoolExecutor" />
+          <option value="django.db.models.User" />
+          <option value="rides.settings.dj_database_url" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
