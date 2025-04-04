@@ -1,0 +1,1 @@
+https://www.yad2.co.il/vehicles/cars?carFamilyType=1&manufacturer=1&model=10003&year=2019--1&price=75000-100000&km=-1-90000&engineType=1101&gearBox=102&priceOnly=1&ownerID=1

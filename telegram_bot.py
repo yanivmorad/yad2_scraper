@@ -16,8 +16,8 @@ ADD_URL = 0
 def start(update, context):
     # הגדרת הכפתורים במקלדת
     keyboard = [
-        ['/scan', '/list'],
-        ['/addurl', '/help']
+        ['סריקה', 'רשימה'],
+        ['הוסף URL', 'עזרה']
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, one_time_keyboard=False, resize_keyboard=True)
     context.bot.send_message(
@@ -66,7 +66,7 @@ def scan(update, context):
 
             message = "🚗 **רכבים חדשים** 🚗\n\n"
             for listing in new_listings:
-                message += f"**🚗 דגם:** {listing['make_model']}\n"
+                message += f"**🚗 דגם:** {listing['make_model']} {listing['year_hand']}\n"
                 message += f"**💰 מחיר:** {listing['price']}\n"
                 message += f"**📊 קילומטראז':** {listing['km']} קמ\n"
                 message += f"**🔗 קישור:** {listing['link']}\n\n"

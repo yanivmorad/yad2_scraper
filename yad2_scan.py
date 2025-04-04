@@ -105,6 +105,13 @@ class Yad2VehicleScraper:
             })
         return listings
 
+    def get_new_listings(self):
+        new_listings = []
+        for listing in self.data:
+            if listing['link'] not in self.existing_links:
+                new_listings.append(listing)
+        return new_listings
+
     def parse_ad_details(self, ad_url):
         html_content = self.fetch_page(ad_url)
         if not html_content:
